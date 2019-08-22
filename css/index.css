@@ -1,0 +1,289 @@
+/*
+  배경:white
+  포인트칼라:#ca5c43
+  본문텍스트:#666
+  제품,아티클 제목:#333*/
+*{
+    margin: 0%; padding: 0%;
+    box-sizing: border-box;    
+}
+body{
+    font-family: 'Open Sans','Nanum Gothic','맑은 고딕',sans-serif;
+    overflow-x: hidden;;width: 100%;
+       
+}
+a{text-decoration: none;}
+ul{ list-style: none;}
+h1{
+    font-size: 28px;
+}
+h2{
+    font-size: 3rem;
+    color: white;
+    margin-top: 0.5em; margin-bottom: 0.5em;
+    font-family: 'Noto Serif', serif;
+}
+p{
+    font-size: 16px;
+    margin-top: 0.5em; margin-bottom: 0.5em;
+    line-height: 1.8em;
+}
+/*header*/
+#main_header{
+    background: rgba(77, 74, 74, 0.8); color: #fff;/*스크롤될때 색깔 투입*/
+    height: 60px;width: 100%;
+    position: fixed;
+    
+    z-index: 100;
+    transition: top 0.2s ease-in-out;
+
+}
+.nav-up { top: -200px; } /*헤더 높이와 같게 하면 상단여백이 생기므로 걍 날려버려 바디에
+                          마이너스 패딩값 주지말공*/ 
+
+
+/*#main_header.nav-up{background: red;}
+#main_header.nav-down{background:#000;}*/
+.container{
+    width: 1200px; 
+    /*border: 1px solid red;*/
+    margin: 0% auto;
+    position: relative;
+   
+}
+#main_header nav{
+    position: absolute;
+    right: 0%; line-height: 60px;
+}
+#main_header  h1{
+    position: absolute;
+    left: 0%; line-height: 60px;
+}
+#main_header  h1 a{color: #ce9325;}
+#main_header nav ul li{
+    display: inline-block;margin-left: 1em;margin-right:1em; 
+}
+#main_header nav ul li:last-child{margin-right: 0%;}
+#main_header nav ul li a{ color: white;}
+#main_header nav ul li a:hover{
+    color: rgba(255, 255, 255, 0.8);
+}
+/* main visual*/
+#main_visual{transition: (0.5);}
+#main_visual .slide_01{ /*main_visual이 header까지 보이는것은 header 요소가 absolute로 떠 있는 상태이기 때문에 */
+    width: auto; height: 500px;  
+    background: #ccc;
+    background-image: url("../images/main_visual04.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    position: absolute;
+   
+}
+#main_visual .slide_01{position: relative;width: 100%;height: 540px;
+                       position: relative;}
+#main_visual .slide_01 h2{
+    position: absolute;
+    left: 514px; top: 150px;
+    position: absolute;
+    margin-bottom: 0.5em;
+    color: white;
+    font-family: 'Nanum Gothic', 'Open Sans','맑은 고딕',sans-serif;
+}
+#main_visual .slide_01 h3{
+    position: absolute;left: 409px;top: 250px;
+    margin-bottom: 2em;
+    color:white;
+    font-size: 2rem;
+}
+.slide_01 .btn_more a{position: absolute;top: 800px;}
+.slide_01 .btn_more{
+    color: #fff;
+    background: #ca5c43;
+    padding: 10px 26px 10px 26px;
+    margin-bottom:150px;
+    position: absolute;
+    top: 380px;left: 542px;
+}
+#main_visual .slide_02{width: 100%;height: 540px;
+    position: absolute;
+    top: 0%;  
+    background: #ccc;
+    background-image: url("../images/main_visual03.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    color: white;
+    
+    }
+#main_visual .slide_02 h2{
+position: absolute;
+left: 514px; top: 150px;
+position: absolute;
+margin-bottom: 0.5em;
+color: #ce9325;
+font-family: 'Nanum Gothic', 'Open Sans','맑은 고딕',sans-serif;
+}
+#main_visual .slide_02 h3{
+position: absolute;left: 409px;top: 250px;
+margin-bottom: 2em;
+color:#ce9325;
+font-size: 2rem;
+}
+.slide_02 .btn_more a{position: absolute;top: 800px;}
+.slide_02 .btn_more{
+color: #fff;
+background: #ca5c43;
+padding: 10px 26px 10px 26px;
+margin-bottom:150px;
+position: absolute;
+top: 380px;left: 542px;
+}
+#main_visual .container{
+    padding-top: 130px;
+}
+.btn_more:hover{
+    background: rgba(202, 92, 67, 0.8);
+}
+/*스페셜 브랜드 섹션*/
+#brand{
+    text-align: center;
+    
+    
+    /*overflow: hidden;*/
+}
+#brand .container h2{margin-top: 3em;}
+#brand h2, #brand p{
+   /* text-align: center;*/
+    
+    padding-left: 295px;
+    padding-right: 295px;
+}
+#brand h2{color: #ca5c43;}
+#brand p{margin-bottom: 80px;}
+#brand .product{
+    overflow: hidden;
+    margin-bottom: 80px;
+}
+#brand .product li{
+    /*1200 - (중간여백=컬럼수-1)-3(컬럼수)*/
+    width:386px;
+    margin-right:20px;
+    float: left;
+}
+#brand .product{position: relative;}
+#brand .product .ale{position: absolute;left: 133px;top: 172px;color:white;font-size: 2rem;}
+#brand .product .weizen{position: absolute;color:white;font-size: 2rem;right:546px;top: 172px;}
+
+
+#brand .product .lager{position: absolute;color:white;font-size: 2rem;right: 89px;top: 172px;}
+#brand .product li:last-child{
+    margin-right: 0;
+  }
+#brand .product img{
+    display: block;
+}
+#brand .product .name{
+    display: block;
+    font-weight: bold;
+    font-family: 'Open Sans';
+    margin-top: 1em;
+}
+#brand .product li{
+    text-align: center;
+}
+#brand .product .price{
+    font-weight: bold;
+    font-family: 'Open Sans';
+}
+#brand .product .price strong{
+    color: #ca5c43;
+}
+/*banner section*/
+#banner{overflow: hidden; margin-bottom: 100px;}
+#banner a{color: white;}
+#banner h3{font-size: 2.5rem;}
+.coffee_product{
+    width: 589px; height: 390px;
+    float: left;
+    margin-right: 20px;
+    
+    background-image: url("../images/sub.png")
+}
+.contact_us{
+    float: left;
+    width: 589px; height: 390px;
+    
+    background-image: url("../images/cont.png")
+}
+.coffee_product h3{
+    line-height: 390px;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+.contact_us h3{
+    line-height: 390px;
+    color: white;
+    font-size: 2em;
+    text-align: center;
+}
+#sns .container{ 
+    text-align: center;
+    /*box-sizing: content-box;*/
+    overflow: hidden;
+    padding-bottom: 100px;
+    
+  }
+#sns h3{color: #ca5c43;margin-bottom: 2em;}  
+#sns ul li{
+    width: 240px;
+    float: left; 
+    
+}
+#sns ul li:hover{
+    margin: -1rem; /*마진을 마이너스 주면 커지는 현상*/
+    /*transform: scale(1.1);*/
+       
+     
+    
+}
+#more{overflow: hidden; margin-bottom: 100px;}
+
+.morel{
+    width: 589px;
+    float: left;
+    text-align: center;
+    margin-right: 20px;
+}
+.morel h3{padding-top:50px;}
+.morer h3{padding-top:50px;}
+.morer{
+    width: 589px;
+    float: left;
+    text-align: center;
+}
+.morel a, .morer a{color:#ca5c43; text-decoration: underline;}
+#footer {}
+.sns_bottom ul{text-align: center;margin-bottom: 20px;}
+.sns_bottom ul li{
+    display: inline-block;
+    width: 30px;
+    
+}
+.sns_bottom ul li a{color: #000;}
+.bottom_menu{
+    text-align: center; margin-bottom: 20px;
+}
+.bottom_menu li{
+    display: inline-block;
+    width: 130px;
+}
+.bottom_menu li a{color: #000;}
+.addr{
+    text-align: center; margin-bottom: 20px;
+}
+.copyright{text-align: center;}

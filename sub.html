@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>subscription</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/sub.css">
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic|Noto+Serif|Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+</head>
+<body>
+    <header id="main_header">
+        <div class="container">
+            <h1><a href="index.html">CRAFTBEER</a></h1>
+            <nav>
+                <ul id="main_menu">
+                    <li><a href="#">BEEREGEAR</a></li>
+                    <li><a href="#">SUBSCIPTION</a></li>
+                    <li><a href="#">HOP&BEER</a></li>
+                    <li>
+                        <label for="s"><i class="fas fa-search"></i></label>
+                        <input type="search" id="s">
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-user"></i></a>
+                        
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-shopping-cart"></i></a>
+                        
+                    </li>
+                    
+                </ul>
+            
+            </nav>
+        </div> <!--end container-->
+    </header>
+
+    <section id="main">
+        <div class="container">
+            <div class="line"></div>
+            <h1>subscription</h1>
+                        
+            <p>
+                맥주는 발효 효모의 특성에 따라 나누면 크게 에일과 라거로 구분되는데요.<br> 발효과정에서 나오게 되는 효모가 위로 떠오르면 상면발효맥주 ‘에일’, 아래로 떠오르면 하면발효맥주, 즉 ‘라거’가 된답니다.
+            </p>
+        </div>
+        <div class="container">
+            <ul class="img">
+                <li><img src="images/sale01.png"></li>
+                <li><img src="images/sale02.png"></li>
+                <li><img src="images/sale03.png"></li>
+               
+            </ul>
+            <ul class="img_2">
+                <li><img src="images/cont.png" alt=""></li>
+                <li><img src="images/sub.png" alt=""></li>
+            </ul>
+            <ul class="img_3">
+                <li><img src="images/sub01.png" alt=""></li>
+                <li><img src="images/sub02.png" alt=""></li>
+                <li><img src="images/sub03.png" alt=""></li>
+                <li><img src="images/sub04.png" alt=""></li>
+            </ul>
+        </div>          
+    </section>                       
+          
+    
+        
+    
+    
+    <!--footer-->
+    <footer id="footer">
+        <div class="container">
+            <div class="sns_bottom">
+                <ul>
+                    <li><a href="#"><i class="fas fa-search"></i></a></li>
+                    <li><a href="#"><i class="fas fa-user"></i></a></li>
+                    <li><a href="#"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+                
+            </div>
+            <nav>
+                <ul class="bottom_menu">
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+            </nav>
+            <address>
+                <p class="addr">
+                        상호: COFFEETIME | 대표: 홍길동 | 개인정보관리책임자: 홍길동 | 전화: 000-0000-0000 | 이메일: your@domain.com<br>
+                      
+                    주소: 서울특별시 중구 세종대로 110 | 사업자등록번호: 000-00-00000 | 통신판매: 제 2017-서울강남-00000호 | 호스팅제공자: (주)식스샵
+                </p>
+                <p class="copyright">
+                    Copyright © COFFTIME All rights reserved.
+                </p>
+            </address>
+        </div>
+    </footer>
+
+    <script>
+        // Hide Header on on scroll down
+         var didScroll; var lastScrollTop = 0; var delta = 5; var navbarHeight = $('#main_header').outerHeight(); $(window).scroll(function(event){ didScroll = true; }); setInterval(function() { if (didScroll) { hasScrolled(); didScroll = false; } }, 250); function hasScrolled() { var st = $(this).scrollTop();
+  
+         // Make sure they scroll more than delta
+          if(Math.abs(lastScrollTop - st) <= delta) return;
+  
+          if (st > lastScrollTop && st > navbarHeight){ 
+              // Scroll Down 
+          $('#main_header').removeClass('nav-down').addClass('nav-up'); } else { 
+              // Scroll Up 
+          if(st + $(window).height() < $(document).height()) { $('#main_header').removeClass('nav-up').addClass('nav-down'); } } lastScrollTop = st; }
+  
+          //webdir.tistory.com/481 [WEBDIR]
+  
+  
+      </script>
+</body>
+</html>

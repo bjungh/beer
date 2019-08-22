@@ -1,0 +1,119 @@
+/*
+  배경:white
+  포인트칼라:#ca5c43
+  본문텍스트:#666
+  제품,아티클 제목:#333*/
+  *{
+    margin: 0%; padding: 0%;
+    box-sizing: border-box;    
+}
+body{
+    font-family: 'Open Sans','Nanum Gothic','맑은 고딕',sans-serif;
+    color: #666; overflow-x: hidden;;width: 100%;
+        
+}
+a{text-decoration: none;}
+ul{ list-style: none;}
+h1{
+    font-size: 28px;
+}
+h2{
+    font-size: 3rem;
+    color: white;
+    margin-top: 0.5em; margin-bottom: 0.5em;
+    font-family: 'Noto Serif', serif;
+}
+p{
+    font-size: 16px;
+    margin-top: 0.5em; margin-bottom: 0.5em;
+    line-height: 1.8em;
+}
+/*header*/
+#main_header{
+    background: rgba(77, 74, 74, 0.8); color: #fff;/*스크롤될때 색깔 투입*/
+    height: 60px;width: 100%;
+    position: fixed;
+    top: 0%;left: 0%;
+    z-index: 100;
+    transition: top 0.2s ease-in-out;
+
+}
+.nav-up { visibility: hidden; } /*헤더 높이와 같게 하면 상단여백이 생기므로 걍 날려버려 바디에
+                          마이너스 패딩값 주지말공 sub페이지는 안되서 hidden으로함*/
+
+
+/*#main_header.nav-up{background: red;}
+#main_header.nav-down{background:#000;}*/
+.container{
+    width: 1200px; 
+    /*border: 1px solid red;*/
+    margin: 0% auto;
+    position: relative;
+   
+}
+#main_header nav{
+    position: absolute;
+    right: 0%; line-height: 60px;
+}
+#main_header  h1{
+    position: absolute;
+    left: 0%; line-height: 60px;
+    }
+#main_header  h1 a{ color: #ce9325;}
+#main_header nav ul li{
+    display: inline-block;margin-left: 1em;margin-right:1em; 
+}
+#main_header nav ul li:last-child{margin-right: 0%;}
+#main_header nav ul li a{ color: white;}
+#main_header nav ul li a:hover{
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/*본문*/
+#main{
+    width: 1200px; 
+    margin: 0% auto;
+    margin-top: 10rem;
+    position: relative;
+}
+.line, h1, p{ text-align: center;}
+#main.container{background: #ccc;height: 500px;}
+#main .line{width: 50px;height: 50px;border-top: 1px solid #333;
+    position: absolute;left: 575px; margin-top: 5rem;
+    text-align: center;}
+#main h1{margin-top: -80px;background: #ccc;}
+#main h1, p{ margin-top:5rem; }
+.img{margin-top: 2rem;margin-bottom: 2rem;}
+.img img {display: block;}
+.img li{float: left;margin-right: 20px;}
+.img li:last-child{margin-right: 0px;margin-bottom: 20px;}/*아래마진을 마지막요소에 넣어야 하나
+  아니면 전체 박스 마진을 줘야 하나 전체는 왜 안먹지?*/
+.img{}
+.img_2 img{display: block;overflow: hidden;}
+.img_2 li {float: left;margin-right: 20px;}
+.img_2 li:last-child{margin-right: 0;margin-bottom: 20px;}   
+.img_3 li{display: block;float: left;margin-right: 20px;}
+.img_3 li:last-child{margin-right: 0;margin-bottom: 10rem;}
+
+/*footer*/
+#footer {clear: both;}
+.sns_bottom ul{text-align: center;margin-bottom: 20px;}
+.sns_bottom ul li{
+    display: inline-block;
+    width: 30px;
+    
+}
+.sns_bottom{margin-top: 2rem;}
+.sns_bottom ul li a{color: #000;}
+.bottom_menu{
+    text-align: center; margin-bottom: 20px;
+}
+.bottom_menu li{
+    display: inline-block;
+    width: 130px;
+}
+.bottom_menu li a{color: #000;}
+.addr{
+    text-align: center; 
+}
+.copyright{text-align: center;margin-top: 20px;}
